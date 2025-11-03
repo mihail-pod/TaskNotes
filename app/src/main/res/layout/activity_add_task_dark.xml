@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/addRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_dark"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        android:text="Новая запись"
+        android:textColor="@color/text_primary"
+        android:textSize="28sp" />
+
+    <EditText
+        android:id="@+id/etTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/search_bg"
+        android:hint="Заголовок"
+        android:padding="8dp"
+        android:textColor="@color/text_primary"
+        android:textColorHint="@color/task_date_color" />
+
+    <EditText
+        android:id="@+id/etDesc"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:background="@color/search_bg"
+        android:gravity="top"
+        android:hint="Новая строка - подзадача)"
+        android:inputType="textMultiLine"
+        android:padding="8dp"
+        android:textColor="@color/text_primary"
+        android:textColorHint="@color/task_date_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="8dp">
+
+        <CheckBox
+            android:id="@+id/cbDoneInForm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Выполнена"
+            android:textColor="@color/text_primary" />
+
+        <Spinner
+            android:id="@+id/spKind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/accent_yellow"
+        android:text="Сохранить"
+        android:textColor="@color/text_primary" />
+</LinearLayout>
